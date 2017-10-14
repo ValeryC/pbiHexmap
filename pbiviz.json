@@ -1,0 +1,27 @@
+{
+  "visual": {
+    "name": "HexMap",
+    "displayName": "HexMap",
+    "guid": "hexMap111DD6343EED418D806E6EDF6D7C852D",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "Hexbin maps for Power BI",
+    "supportUrl": "",
+    "gitHubUrl": "https://github.com/deldersveld/pbiHexmap"
+  },
+  "apiVersion": "1.7.0",
+  "author": {
+    "name": "David Eldersveld",
+    "email": "david@dataveld.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}
