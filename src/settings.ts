@@ -33,15 +33,11 @@ module powerbi.extensibility.visual {
       }
 
     export class dataPointSettings {
-     // Default color
-      public defaultColor: string = "";
-     // Show all
-      public showAllDataPoints: boolean = true;
-     // Fill
-      public fill: string = "";
-     // Color saturation
-      public fillRule: string = "";
-     // Text Size
+      public highColor: string = "#01B8AA";
+      public lowColor: string = "#EEEEEE";
+      public outlineColor: string = "#FFFFFF";
+      public showTextLabels: boolean = true;
+      public fontColor: string = "#222222";
       public fontSize: number = 12;
      }
 

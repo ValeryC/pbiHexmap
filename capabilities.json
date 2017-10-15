@@ -13,10 +13,10 @@
     ],
     "objects": {
         "dataPoint": {
-            "displayName": "Data colors",
+            "displayName": "Hexmap options",
             "properties": {
-                "defaultColor": {
-                    "displayName": "Default color",
+                "highColor": {
+                    "displayName": "High color",
                     "type": {
                         "fill": {
                             "solid": {
@@ -25,26 +25,40 @@
                         }
                     }
                 },
-                "showAllDataPoints": {
-                    "displayName": "Show all",
+                "lowColor": {
+                    "displayName": "Low color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "outlineColor": {
+                    "displayName": "Outline color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showTextLabels": {
+                    "displayName": "Show labels",
                     "type": {
                         "bool": true
                     }
                 },
-                "fill": {
-                    "displayName": "Fill",
+                "fontColor": {
+                    "displayName": "Text color",
                     "type": {
                         "fill": {
                             "solid": {
                                 "color": true
                             }
                         }
-                    }
-                },
-                "fillRule": {
-                    "displayName": "Color saturation",
-                    "type": {
-                        "fill": {}
                     }
                 },
                  "fontSize": {
@@ -60,6 +74,17 @@
     },
     "dataViewMappings": [
         {
+            "conditions": [
+                {
+                    "category": {
+                        "min": 0,
+                        "max": 1
+                    },
+                    "measure": {
+                        "max": 1
+                    }
+                }
+            ],
             "categorical": {
                 "categories": {
                     "for": {
