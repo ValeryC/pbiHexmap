@@ -9220,6 +9220,7 @@ var powerbi;
                         hexmap
                             .append("polygon")
                             .attr("points", function (d) { return d.points; })
+                            .attr("class", "polygon")
                             .attr("stroke", optionOutlineColor)
                             .attr("stroke-width", "2")
                             .attr("fill", function (d) { return viewModel.hexmapMetaData[0].measureIndex > -1 ? colorScale(d.measureValue) : optionHighColor; });
@@ -9235,7 +9236,7 @@ var powerbi;
                         hexmap.on('click', function (d) {
                             selectionManager.select(d.selectionId, false).then(function (ids) {
                                 hexmap.attr({
-                                    'opacity': ids.length > 0 ? 0.2 : 1,
+                                    'opacity': ids.length > 0 ? 0.25 : 1
                                 });
                             });
                             d3.select(this).attr({
@@ -9296,8 +9297,8 @@ var powerbi;
     (function (visuals) {
         var plugins;
         (function (plugins) {
-            plugins.hexMap111DD6343EED418D806E6EDF6D7C852D_DEBUG = {
-                name: 'hexMap111DD6343EED418D806E6EDF6D7C852D_DEBUG',
+            plugins.hexMap111DD6343EED418D806E6EDF6D7C852D = {
+                name: 'hexMap111DD6343EED418D806E6EDF6D7C852D',
                 displayName: 'HexMap',
                 class: 'Visual',
                 version: '1.0.0',

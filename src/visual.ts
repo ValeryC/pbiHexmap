@@ -323,6 +323,7 @@ module powerbi.extensibility.visual {
             hexmap
                 .append("polygon")
                 .attr("points", function(d) { return (d as any).points; })
+                .attr("class", "polygon")
                 .attr("stroke", optionOutlineColor)
                 .attr("stroke-width", "2")
                 .attr("fill", function(d) { return viewModel.hexmapMetaData[0].measureIndex > -1 ? colorScale((d as any).measureValue) : optionHighColor; });
@@ -340,7 +341,7 @@ module powerbi.extensibility.visual {
             hexmap.on('click', function(d) {
                 selectionManager.select((d as any).selectionId, false).then((ids: ISelectionId[]) => {
                     hexmap.attr({
-                        'opacity': ids.length > 0 ? 0.2 : 1,
+                        'opacity': ids.length > 0 ? 0.25 : 1
                     });
                 });
 

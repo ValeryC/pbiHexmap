@@ -1,6 +1,6 @@
 module powerbi.visuals.plugins {
-    export var hexMap111DD6343EED418D806E6EDF6D7C852D_DEBUG = {
-        name: 'hexMap111DD6343EED418D806E6EDF6D7C852D_DEBUG',
+    export var hexMap111DD6343EED418D806E6EDF6D7C852D = {
+        name: 'hexMap111DD6343EED418D806E6EDF6D7C852D',
         displayName: 'HexMap',
         class: 'Visual',
         version: '1.0.0',
